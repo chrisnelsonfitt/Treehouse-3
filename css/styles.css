@@ -1,0 +1,107 @@
+* {
+  padding:0;
+  margin:0;
+}
+html{
+    color:#837F7B;
+    background:#F2F2F2;
+    font-family: 'Karla', sans-serif;
+}
+header{
+    text-align: center;
+    color:#f2f2f2;
+    background:#3D4B4E;
+    height: 75px;
+    line-height: 70px;
+    width:100%;
+    margin-bottom: 15px; 
+}
+main h2{ 
+    margin-top:25px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+main p{
+    width:80%;
+    display: block;
+    margin-bottom: 35px; 
+    margin-top:25px;
+}
+
+.signup{
+    padding-bottom:25px;
+    border-bottom: solid 5px;
+}
+.signup p{
+    margin:auto;
+    text-align: center;
+}
+.padding{
+    
+    margin-top:5px;
+    border-top: solid 3px;
+    width:98%;
+    margin:5px auto;
+}
+main{
+    margin:auto;
+    margin-top: 3px;
+    width:95%;
+}
+.contact_form input , select{
+    width:100%;
+    height:35px;
+    margin: 15px 0px;
+    background: #fff;
+    border:none;
+    border-radius: 4px;
+}
+input:focus , select:focus , textarea{
+    outline:none;
+   border-bottom: solid 3px #75BEBB;
+    
+}
+.error{
+    border:solid 2px #FF5A43;
+}
+.newsletter_form p{
+    margin-bottom:25px;
+    margin-top:15px;
+  width:100%;
+   
+}
+textarea{
+    background:#fff;
+    border:none;
+    width:100%;
+    border-radius: 4px;
+    height: 120px;
+}
+button{
+    background:#75BEBB;
+    display: block;
+    margin:auto;
+    margin-top:25px;
+    width:100%;
+    height: 50px;
+    border-radius: 5px;
+    border:none;
+    font-size: 1.333rem;
+    font-weight: bold;
+    color:#f2f2f2;
+}
+footer{
+    text-align: center;
+    font-style: italic;
+    margin: 15px;
+    
+}
+@media (min-width:1024px){
+    main{
+    width:50%;
+}
+    button{
+        width:25%;
+    }
+
+}
