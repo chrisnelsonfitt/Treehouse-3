@@ -64,13 +64,10 @@ input:hover{
 }
 input:focus , select:focus , textarea{
         outline:none;
-        border-bottom: solid 3px;
-        rgba(117,190,187,.5);
+        border-bottom: solid 3px rgba(117,190,187,.5);
         animation: fadein 300ms ease-in 1; 
 }
-input:blurred , select:blurred{
-        animation: fadeout 300ms ease-in 1; 
-}
+
 .error{
     border:solid 2px #FF5A43;
 }
@@ -126,8 +123,7 @@ footer{
     }
     to{
       
-        border-bottom:solid 3px rgba(117,190,187,1),  ;
-        border-bottom-width: 3px;
+        border-bottom:solid 3px rgba(117,190,187,1) ;
     }
 }
 @keyframes fadeout{
@@ -137,7 +133,7 @@ footer{
     }
     to{
       
-        border-bottom:solid 0px rgba(117,190,187,.1),  ;
+        border-bottom:solid 0px rgba(117,190,187,.1);
         border-bottom-width: 0px;
     }
 }
