@@ -3,7 +3,6 @@
 <head>
             <title> Form</title>
             <meta charset="utf-8">
-            <meta name='viewport' content="width=device-width, initial_scale=1.0">
             <link href="css/styles.css" rel='stylesheet'>
             <link href='https://fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
 </head>
@@ -30,25 +29,25 @@
         Contact Information
         </h2>
         <form>
-            <label for="name">Full Name</label>
+            <label>Full Name</label>
             <input type="text" name="fullname" placeholder=" &nbsp; Enter Full Name" required>
                 <br>
-            <label for="email">Email Address</label>
+            <label>Email Address</label>
             <input type='text' name="Email" placeholder=" &nbsp; Enter Email Address" required>
                 <br>
-            <label for"confirm">Confirm Email</label>
+            <label>Confirm Email</label>
             <input type='text' name="Email" placeholder=" &nbsp; Confirm Email Address" required >
                 <br>
-            <label for"phone">Phone Number</label>
+            <label>Phone Number</label>
             <input type="text" name="phonenumber" placeholder="&nbsp; Enter Phone Number">
                 <br>
-            <label for"address">Street Address</label>
+            <label>Street Address</label>
             <input type="text" name="address" placeholder="&nbsp; Enter Street Address">
                 <br>
-            <label for"city">City</label>
+            <label>City</label>
             <input type="text" name="city" placeholder='&nbsp; Enter City'>
                 <br>
-            <label for"state">State</label>
+            <label>State</label>
             <select name="state">
                 <option value="AL">Alabama</option>
                 <option value="AK">Alaska</option>
@@ -103,7 +102,7 @@
                 <option value="WY">Wyoming</option>
             </select>
                 <br>
-            <label for"zip_code">Zip Code</label>
+            <label>Zip Code</label>
             <input type="text" name="Zip" placeholder="&nbsp; Enter Zip Code" required>
             <br>
         </form>
@@ -112,15 +111,19 @@
         <h2>Newsletter</h2>
         <p> Select the newsletters you would like to recieve</p>
         <form>
-            <input type="checkbox" name="html_news">HTML News  <br>
-            <input type="checkbox" name='css_news'> CSS News<br>
-            <input type="checkbox" name='javascript_news'>Javascript News <br>
-        </form><br>
+            <input type="checkbox" name="html_news"><label>HTML News</label>
+                <br>
+            <input type="checkbox" name='css_news'> <label> CSS News</label>
+                <br>
+            <input type="checkbox" name='javascript_news'><label> Javascript News </label>
+                 <br>
+        </form>
+                <br>
         <p>Newsletter format</p>
         <form>
-            <input type="radio" value="html" name='format'> <label>HTML</label for="html">
+            <input type="radio" value="html" name='format'> <label>HTML</label>
                 <br>
-            <input type="radio" value="plain_text" name='format'><label for"plain_text">Plain text</label for"plain_text">
+            <input type="radio" value="plain_text" name='format'><label>Plain text</label>
             <p> Other topics you'd like to hear about:</p>
             <textarea>
             </textarea><br>
