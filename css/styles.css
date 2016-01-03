@@ -18,27 +18,23 @@ header{
 }
 main h2{ 
     margin:25px 0;
-  
     text-align: center;
 }
-main p{
+p{
     width:80%;
     display: block;
-    margin-bottom: 35px; 
-    margin-top:25px;
+    margin:0 auto 5px;
+    text-align: center;
 }
 
 .signup{
     padding-bottom:25px;
     border-bottom: solid 5px;
 }
-.signup p{
-    margin:auto;
-    text-align: center;
-}
+
 .padding{
     border-top: solid 3px;
-    width:98%;
+    width:99%;
     margin:5px auto;
 }
 main{
@@ -46,21 +42,20 @@ main{
     margin-top: 3px;
     width:95%;
 }
-.contact_form input , select{
+.contact input ,select{
     width:100%;
-    height:35px;
-    margin: 15px 0;
-    background: #fff;
-    border:none;
     border-radius: 4px;
-}
-input , select, textarea{
     font-size: .9rem;
     font-style: italic;
+    height:35px;
     color:#444;
+    background:#fff;
+    margin:7px auto 15px;
+    border:none
 }
-input:hover{
-        animation: ani 500ms ease-in 1;  
+.bold_format{
+font-weight: bold;
+    
 }
 input:focus , select:focus , textarea{
         outline:none;
@@ -68,15 +63,6 @@ input:focus , select:focus , textarea{
         animation: fadein 300ms ease-in 1; 
 }
 
-.error{
-    border:solid 2px #FF5A43;
-}
-.newsletter_form p{
-    margin-bottom:25px;
-    margin-top:15px;
-    width:100%;
-   
-}
 textarea{
     background:#fff;
     border:none;
@@ -94,18 +80,30 @@ button{
     border:none;
     font-size: 1.333rem;
     font-weight: bold;
-    color:#f2f2f2;
 }
 button:hover{
     background:#559E9B;
+    cursor: pointer;
 }
     
-footer{
+fieldset{
+    border:none;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+#newsletter{
+    padding-top: 15px;
+    border-top: double 5px;
+}
+legend{
+    width:100%;
     text-align: center;
-    font-style: italic;
-    margin: 15px;
-    
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin: 20px auto;
+   
 }
+
 @media (min-width:760px){
     main{
         width:50%;

@@ -3,6 +3,7 @@
 <head>
             <title> Form</title>
             <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
             <link href="css/styles.css" rel='stylesheet'>
             <link href='https://fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
 </head>
@@ -24,31 +25,30 @@
     </div>
     <div class='padding'>
     </div>
-    <div class="contact_form">
-        <h2>
-        Contact Information
-        </h2>
-        <form>
-            <label>Full Name</label>
-            <input type="text" name="fullname" placeholder=" &nbsp; Enter Full Name" required>
-                <br>
-            <label>Email Address</label>
-            <input type='text' name="Email" placeholder=" &nbsp; Enter Email Address" required>
-                <br>
-            <label>Confirm Email</label>
-            <input type='text' name="Email" placeholder=" &nbsp; Confirm Email Address" required >
-                <br>
-            <label>Phone Number</label>
-            <input type="text" name="phonenumber" placeholder="&nbsp; Enter Phone Number">
-                <br>
-            <label>Street Address</label>
-            <input type="text" name="address" placeholder="&nbsp; Enter Street Address">
-                <br>
-            <label>City</label>
-            <input type="text" name="city" placeholder='&nbsp; Enter City'>
-                <br>
-            <label>State</label>
-            <select name="state">
+    <form class='contact'>
+        <fieldset>
+            <legend>Contact Information</legend>
+            
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="  Enter Full Name" required>
+            
+            <label for="email">Email Address</label>
+            <input type='email' id="email" name="Email" placeholder="  Enter Email Address" required>
+            
+            <label for="confirm">Confirm Email</label>
+            <input type='email' id="confirm" name="Email" placeholder="  Confirm Email Address" required >
+            
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="  Enter Phone Number">
+            
+            <label for="address">Street Address</label>
+            <input type="text" id="address" name="address" placeholder="  Enter Street Address">
+    
+            <label for="city">City</label>
+            <input type="text" id="city" name="city" placeholder='  Enter City'>
+            
+            <label for='state'>State</label>
+            <select name="state" id="state">
                 <option value="AL">Alabama</option>
                 <option value="AK">Alaska</option>
                 <option value="AZ">Arizona</option>
@@ -101,44 +101,44 @@
                 <option value="WI">Wisconsin</option>
                 <option value="WY">Wyoming</option>
             </select>
-                <br>
-            <label>Zip Code</label>
-            <input type="text" name="Zip" placeholder="&nbsp; Enter Zip Code" required>
-            <br>
+            <label for='zip'>Zip Code</label>
+            <input type="text" id='zip' name="Zip" placeholder="  Enter Zip Code" required>
+        </fieldset>
+    </form>
+    <form>
+        <fieldset>
+        <legend id="newsletter">Newsletter</legend>
+            <label class="bold_format">Select the newsletters you would like to recieve</label><br>
+              
+            <input type="checkbox" id='html_news' name="html_news" value="html_news">
+            <label for='html_news'>HTML News</label><br>
+            
+            <input type="checkbox" id="css_news" name='css_news' value="css_news"> 
+            <label for="css_news"> CSS News</label><br>
+        
+            <input type="checkbox" name='javascript_news' id="javascript_news" value="Javascript_news">
+            <label for="javascript_news"> Javascript News </label><br><br>
+            
+            <label class="bold_format">Newsletter format</label><br>
+                    
+            <input type="radio" id="html_format" value="html" name='format'>
+                   <label for="html_format">HTML</label><br>
+            
+            <input type="radio" id="plain_text" value="plain_text" name='format'>
+                   <label for="plain_text">Plain text</label><br><br>
+             
+            <label for="other_areas">Other topics you'd like to hear about:</label>
+            <textarea id="other_areas" name="other_areas"></textarea><br><br>
+            
+            <label for="other_comments">Comments:</label>
+            <textarea id="other_comments" name="other_comments"></textarea>     
+            
+            <button type="submit">Sign Up</button>    
+        </fieldset> 
         </form>
-    </div>
-    <div class="newsletter_form">
-        <h2>Newsletter</h2>
-        <p> Select the newsletters you would like to recieve</p>
-        <form>
-            <input type="checkbox" name="html_news"><label>HTML News</label>
-                <br>
-            <input type="checkbox" name='css_news'> <label> CSS News</label>
-                <br>
-            <input type="checkbox" name='javascript_news'><label> Javascript News </label>
-                 <br>
-        </form>
-                <br>
-        <p>Newsletter format</p>
-        <form>
-            <input type="radio" value="html" name='format'> <label>HTML</label>
-                <br>
-            <input type="radio" value="plain_text" name='format'><label>Plain text</label>
-            <p> Other topics you'd like to hear about:</p>
-            <textarea>
-            </textarea><br>
-            <p> Other Comments:</p>
-            <textarea>
-            </textarea><br>
-        </form>
-        <button>
-        Sign Up
-        </button>
-    </div>
+   
 </main>
     <footer>
-        <p>
-        Copyright The Code Review
-        </p>
+        <p>Copyright The Code Review</p>
     </footer>
 </html>
